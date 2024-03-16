@@ -1,0 +1,20 @@
+{
+    "version": "0.2",
+    "ignorePaths": [
+        "node_modules/**", //
+        "**/*eslint*",
+        "**/*.config.js"
+    ],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "chartjs",
+        "gtag",
+        "Hoverable",
+        "reduxjs",
+        "svgr",
+        "tailwindcss"
+    ],
+    "ignoreWords": [],
+    "import": []
+}

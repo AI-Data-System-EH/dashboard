@@ -1,0 +1,28 @@
+{
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  //* TypeScript
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "javascript.validate.enable": false,
+  //* ESLint
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "eslint.packageManager": "yarn",
+  "eslint.nodePath": ".yarn/sdks",
+  //* Prettier
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+  "prettier.configPath": ".prettierrc",
+  //* Tailwind CSS
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}
