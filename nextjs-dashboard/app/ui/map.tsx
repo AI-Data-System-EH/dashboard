@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect } from "react";
 
 declare global {
@@ -7,12 +9,11 @@ declare global {
 }
 
 function Map() {
-    const mapScript = document.createElement("script");
-    mapScript.async = true;
-    mapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAO_MAP_KEY}&autoload=false&libraries=services,clusterer,drawing`;
-    document.head.appendChild(mapScript);
-
     useEffect(() => {
+        const mapScript = document.createElement("script");
+        mapScript.async = true;
+        mapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAO_MAP_KEY}&autoload=false&libraries=services,clusterer,drawing`;
+        document.head.appendChild(mapScript);
         const onLoadKakaoMap = () => {
             window.kakao.maps.load(() => {
                 // 지도 생성
