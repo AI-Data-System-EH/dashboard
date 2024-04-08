@@ -1,79 +1,57 @@
 {
     "printWidth": 100,
     "tabWidth": 4,
-    "useTabs": false,
+    "endOfLine": "auto",
+    "trailingComma": "es5",
     "semi": true,
     "singleQuote": false,
-    "proseWrap": "preserve",
-    "trailingComma": "es5",
-    "bracketSameLine": true,
-    "bracketSpacing": true,
-    "arrowParens": "always",
-    "endOfLine": "auto",
-
-    "htmlWhitespaceSensitivity": "css",
-    "quoteProps": "as-needed",
-    "jsxSingleQuote": false,
+    "useTabs": false,
     "singleAttributePerLine": false,
-    "requirePragma": false,
-    "insertPragma": false,
-    "vueIndentScriptAndStyle": false,
-    "embeddedLanguageFormatting": "auto",
 
-    "overrides": [
-        {
-            "files": "*.json",
-            "options": {
-                "printWidth": 80,
-                "tabWidth": 4,
-                "bracketSpacing": true
-            }
-        },
-        {
-            "files": "*.{html,yml,yaml,scss}",
-            "options": {
-                "printWidth": 120,
-                "tabWidth": 4
-            }
-        },
-        {
-            "files": "*.{md,markdown}",
-            "options": {
-                "printWidth": 200,
-                "tabWidth": 4,
-                "useTabs": true
-            }
-        },
-        {
-            "files": "*.{js,ts,jsx,tsx}",
-            "options": {
-                "printWidth": 120,
-                "tabWidth": 2,
-                "trailingComma": "none",
-                "parser": "typescript"
-            }
-        },
-        {
-            "files": "*.workspace",
-            "options": {
-                "parser": "json",
-                "tabWidth": 4
-            }
-        },
-        {
-            "files": ".prettierrc",
-            "options": {
-                "parser": "json",
-                "tabWidth": 4
-            }
-        }
-    ],
     "plugins": [
-        "prettier-plugin-tailwindcss",
         "prettier-plugin-multiline-arrays",
+        "prettier-plugin-tailwindcss",
         "prettier-plugin-organize-imports"
     ],
 
     "organizeImportsSkipDestructiveCodeActions": true,
-    "multilineArraysWrapThreshold": 5
+    "multilineArraysWrapThreshold": 0,
+
+    "overrides": [
+        {
+            "files": [
+                "*.yml",
+                "*.yaml"
+            ],
+            "options": {
+                "tabWidth": 2,
+                "parser": "yaml"
+            }
+        },
+        {
+            "files": "*.md",
+            "options": {
+                "printWidth": 200,
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": [
+                ".prettierrc"
+            ],
+            "options": {
+                "parser": "jsonc",
+                "trailingComma": "none"
+            }
+        },
+        {
+            "files": [
+                "*.{js,ts,jsx,tsx}"
+            ],
+            "options": {
+                "parser": "typescript",
+                "tabWidth": 4
+            }
+        }
+    ]
 }

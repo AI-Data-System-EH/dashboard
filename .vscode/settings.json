@@ -1,28 +1,23 @@
 {
-  "search.exclude": {
-    "**/.yarn": true,
-    "**/.pnp.*": true
-  },
-  //* TypeScript
-  "typescript.tsdk": ".yarn/sdks/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "javascript.validate.enable": false,
-  //* ESLint
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ],
-  "eslint.packageManager": "yarn",
-  "eslint.nodePath": ".yarn/sdks",
-  //* Prettier
-  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
-  "prettier.configPath": ".prettierrc",
-  //* Tailwind CSS
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-  "editor.quickSuggestions": {
-    "strings": true
-  }
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "[markdown]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
+        "cSpell.fixSpellingWithRenameProvider": true,
+        "cSpell.advanced.feature.useReferenceProviderWithRename": true,
+        "cSpell.advanced.feature.useReferenceProviderRemove": "/^#+\\s/",
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "cSpell.words": [
+        "tseslint"
+    ]
 }

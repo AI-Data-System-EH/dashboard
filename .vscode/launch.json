@@ -15,13 +15,13 @@
             "type": "node-terminal",
             "request": "launch",
             "name": "Launch Next.js",
-            "command": "yarn run dev"
+            "command": "npm run dev"
         },
         {
             "name": "Next.js Launch Dev Server",
             "type": "node-terminal",
             "request": "launch",
-            "command": "yarn run dev",
+            "command": "npm run dev",
             "serverReadyAction": {
                 "pattern": "started server on .+, url: (https?://.+)",
                 "uriFormat": "%s",
