@@ -1,3 +1,6 @@
+[![Node.js CI](https://github.com/AI-Data-system-EH/dashboard/actions/workflows/node.js.yml/badge.svg)](https://github.com/AI-Data-system-EH/dashboard/actions/workflows/node.js.yml)
+
+
 ## Installation
 
 ```bash
