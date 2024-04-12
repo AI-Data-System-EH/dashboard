@@ -18,7 +18,21 @@
         "cSpell.advanced.feature.useReferenceProviderRemove": "/^#+\\s/",
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
+    "markdownlint.config": {
+        "MD033": false, // no-inline-html
+        "MD034": false, // no-bare-urls
+        "MD041": false, // first-line-heading
+        "MD012": {
+            // no-multiple-blanks
+            "maximum": 3
+        }
+    },
+    "markdownlint.ignore": [
+        "LICENSE"
+    ],
     "cSpell.words": [
+        "elif",
+        "nextjs",
         "tseslint"
     ]
 }

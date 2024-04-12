@@ -10,6 +10,7 @@
         "yzhang.markdown-all-in-one",
         "christian-kohler.npm-intellisense",
         "jock.svg",
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "davidanson.vscode-markdownlint"
     ]
 }
