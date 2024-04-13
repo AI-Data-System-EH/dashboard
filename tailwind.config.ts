@@ -7,7 +7,12 @@ const config: Config = {
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                inter: "var(--font-inter)",
+                pretendard: "var(--font-pretendard)",
+            },
+        },
     },
     plugins: [],
 };

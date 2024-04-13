@@ -3,6 +3,8 @@
     "files.associations": {
         "*.css": "tailwindcss"
     },
+    "prettier.configPath": ".prettierrc",
+    "prettier.withNodeModules": true,
     "[markdown]": {
         "editor.unicodeHighlight.ambiguousCharacters": false,
         "editor.unicodeHighlight.invisibleCharacters": false,
@@ -31,8 +33,22 @@
         "LICENSE"
     ],
     "cSpell.words": [
+        "Borel",
         "elif",
+        "heensan",
         "nextjs",
         "tseslint"
+    ],
+    "better-comments.tags": [
+        {
+            "tag": "#region",
+            "color": "#696969",
+            "italic": true
+        },
+        {
+            "tag": "#endregion",
+            "color": "#696969",
+            "italic": true
+        }
     ]
 }
