@@ -1,17 +1,15 @@
-import Navbar from './components/Navbar';
-import { NavItems } from './components/types';
+import React from 'react';
+import TopMenuBar from './components/TopMenuBar';
+import Index from './components/index';
 
-const navItems: NavItems = [
-  { title: 'Awesome SaaS Features', href: '/features' },
-  { title: 'Pricing', href: '/pricing' },
-  { title: 'Contact', href: '/contact' },
-  { title: 'Sign up', href: '/sign-up', outlined: true },
-];
-
-export default function Home() {
+const Page: React.FC = () => {
   return (
-    <main>
-      <Navbar items={navItems} />
-    </main>
+    // <div>
+    //   <TopMenuBar />
+    // </div>
+    <Index />
+
   );
 }
+
+export default Page;

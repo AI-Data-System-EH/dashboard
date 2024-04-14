@@ -1,0 +1,25 @@
+.topMenuBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-weight: bold;
+  }
+  
+  .menuItems {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menuItem {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+  
+  .menuItem:hover {
+    color: grey;
+  }

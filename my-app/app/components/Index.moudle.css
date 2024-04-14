@@ -1,0 +1,46 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .iot-solutions {
+    background-color: #f4f7fa;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .product-introduction {
+    background-color: #ffffff;
+    padding: 40px;
+  }
+  
+  .contact-us {
+    background-color: #dde1e7;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .product {
+    margin-bottom: 30px;
+  }
+  
+  .address {
+    margin-bottom: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  h1, h2 {
+    color: #003366;
+  }
+  
+  p {
+    color: #666666;
+  }
+  
