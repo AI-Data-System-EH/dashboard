@@ -3,7 +3,9 @@
     "files.associations": {
         "*.css": "tailwindcss"
     },
+    "editor.suggest.insertMode": "replace",
     "prettier.configPath": ".prettierrc",
+    "prettier.prettierPath": "node_modules/prettier",
     "prettier.withNodeModules": true,
     "[markdown]": {
         "editor.unicodeHighlight.ambiguousCharacters": false,
@@ -36,6 +38,7 @@
         "Borel",
         "elif",
         "heensan",
+        "lucide",
         "nextjs",
         "tseslint"
     ],
@@ -50,5 +53,6 @@
             "color": "#696969",
             "italic": true
         }
-    ]
+    ],
+    "svg.preview.background": "transparent"
 }

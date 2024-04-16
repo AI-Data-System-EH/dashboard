@@ -2,27 +2,15 @@
     "printWidth": 100,
     "tabWidth": 4,
     "endOfLine": "auto",
-    "trailingComma": "es5",
+    "trailingComma": "all",
     "semi": true,
     "singleQuote": false,
     "useTabs": false,
     "singleAttributePerLine": false,
 
-    "plugins": [
-        "prettier-plugin-multiline-arrays",
-        "prettier-plugin-tailwindcss",
-        "prettier-plugin-organize-imports"
-    ],
-
-    "organizeImportsSkipDestructiveCodeActions": true,
-    "multilineArraysWrapThreshold": 0,
-
     "overrides": [
         {
-            "files": [
-                "*.yml",
-                "*.yaml"
-            ],
+            "files": ["*.yml", "*.yaml"],
             "options": {
                 "tabWidth": 2,
                 "parser": "yaml"
@@ -36,21 +24,27 @@
             }
         },
         {
-            "files": [
-                ".prettierrc"
-            ],
+            "files": ["*.json", ".prettierrc"],
             "options": {
-                "parser": "jsonc",
-                "trailingComma": "none"
+                "parser": "json",
+                "trailingComma": "none",
+                "tabWidth": 4,
+                "plugins": ["prettier-plugin-multiline-arrays"],
+                "multilineArraysWrapThreshold": 0
             }
         },
         {
-            "files": [
-                "*.{js,ts,jsx,tsx}"
-            ],
+            "files": ["*.{js,ts,jsx,tsx}"],
             "options": {
                 "parser": "typescript",
-                "tabWidth": 4
+                "tabWidth": 4,
+                "plugins": [
+                    "prettier-plugin-organize-imports",
+                    "prettier-plugin-tailwindcss",
+                    "prettier-plugin-multiline-arrays"
+                ],
+                "organizeImportsSkipDestructiveCodeActions": true,
+                "multilineArraysWrapThreshold": 0
             }
         }
     ]

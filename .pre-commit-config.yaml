@@ -22,4 +22,5 @@ repos:
     hooks:
       - id: prettier
         exclude_types: [markdown, yaml]
-        args: ["--config", ".prettierrc"]
+        types: [jsx, ts, tsx, gitignore, json, css, javascript]
+        args: ["--config", ".prettierrc", "--ignore-path", ".prettierignore"]
